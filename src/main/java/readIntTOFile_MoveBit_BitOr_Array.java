@@ -4,11 +4,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class readIntTOFile_MoveBit_BitOr_Array {
+    public static void main(String []args){
+        readIntTOFile_MoveBit_BitOr_Array("d://data0");
+
+    }
     public static int[] readIntTOFile_MoveBit_BitOr_Array(String file_path){
 
         try {
-            FileInputStream fis = new FileInputStream("d://data0");
-            long file_length= new File("d://data0").length();
+            FileInputStream fis = new FileInputStream(file_path);
+            long file_length= new File(file_path).length();
             int x,x0,x1,x2,x3;
            int[] arr = new int[(int) (file_length / 4)];
            int i=0;
