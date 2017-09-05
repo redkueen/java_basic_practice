@@ -5,8 +5,9 @@ import java.io.IOException;
 
 public class readIntTOFile_MoveBit_BitOr_Array {
     public static void main(String []args){
-        readIntTOFile_MoveBit_BitOr_Array("d://data0");
 
+       int[] return_arr = readIntTOFile_MoveBit_BitOr_Array("d://data0.txt");
+       int x;
     }
     public static int[] readIntTOFile_MoveBit_BitOr_Array(String file_path){
 
