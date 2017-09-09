@@ -7,10 +7,10 @@ public class IndexOfElement {
           }
           x++;
       }
-      return x;
+      return -1;  //返回-1,表示所查询元素不存在于数组中，下标不存在
     }
  public static void main(String[]args){
         int[] arr = {50,2,-9,7};
-        int index = indexOfElement(arr,-9);
+        int index = indexOfElement(arr,10);
  }
 }
