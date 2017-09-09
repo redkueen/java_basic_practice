@@ -2,7 +2,7 @@ public class InvertedIndex {
     static  int[] arr;
     static  int[] arrInvert;
     public static void createInvertedIndex(){
-        arrInvert = new int[51];
+        arrInvert = new int[ArrayTool2.findMax_finrMin(arr).m_max+1];
         int x = 0;
         while(x<arr.length){
             arrInvert[arr[x]] = x;
