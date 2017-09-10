@@ -1,3 +1,5 @@
+import com.xqh.java_basic_practice.array_tool2.ArrayTool2;
+
 public class InvertedIndex {
     static  int[] arr;
     static  int[] arrInvert;

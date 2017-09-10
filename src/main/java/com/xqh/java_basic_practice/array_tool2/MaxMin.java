@@ -1,6 +1,8 @@
+package com.xqh.java_basic_practice.array_tool2;
+
 public class MaxMin {
-    int m_max;
-    int m_min;
+    public int m_max;
+    public int m_min;
 
     MaxMin(int mx, int mn){
         this.m_max = mx;

@@ -1,4 +1,4 @@
-
+package com.xqh.java_basic_practice.array_tool2;
 public class ArrayTool2 {
     public static MaxMin findMax_finrMin(int[]arr){
        int max=arr[0];
