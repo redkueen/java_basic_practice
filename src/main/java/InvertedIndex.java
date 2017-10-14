@@ -4,14 +4,14 @@ public class InvertedIndex {
     static  int[] arr;
     static  int[] arrInvert;
     public static void createInvertedIndex(){
-        arrInvert = new int[ArrayTool2.findMax_finrMin(arr).m_max+1];
+        arrInvert = new int[ArrayTool2.findMax_finrMin(arr).m_max - ArrayTool2.findMax_finrMin(arr).m_min + 1];
         int x = 0;
         int k;
         for (k=0;k<arrInvert.length;k++){
             arrInvert[k] = -1;
         }
         while(x<arr.length){
-            arrInvert[arr[x]] = x;
+            arrInvert[arr[x] - ArrayTool2.findMax_finrMin(arr).m_min] = x;
             x++;
         }
     }
@@ -20,7 +20,7 @@ public class InvertedIndex {
       return i;
     }
     public static void main(String[] args){
-        InvertedIndex.arr = new int[]{50, 2, 9, 7, 6};
+        InvertedIndex.arr = new int[]{50, 2, 9, 7, 6,-10};
         InvertedIndex.createInvertedIndex();
         int i = InvertedIndex.indexof(12);
     }
