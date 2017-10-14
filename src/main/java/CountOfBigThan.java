@@ -1,9 +1,9 @@
 public class CountOfBigThan {
-    public static int countOfBigThan(int[] A,int n){
+    public static int countOfBigThan(int[] a,int n){
         int x = 0;
         int cnt = 0;
-        while(x<A.length){
-            if (A[x] > n){
+        while(x<a.length){
+            if (a[x] > n){
                 cnt = cnt + 1;
             }
             x++;
