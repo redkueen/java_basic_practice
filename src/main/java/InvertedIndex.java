@@ -6,6 +6,10 @@ public class InvertedIndex {
     public static void createInvertedIndex(){
         arrInvert = new int[ArrayTool2.findMax_finrMin(arr).m_max+1];
         int x = 0;
+        int k;
+        for (k=0;k<arrInvert.length;k++){
+            arrInvert[k] = -1;
+        }
         while(x<arr.length){
             arrInvert[arr[x]] = x;
             x++;
@@ -18,7 +22,7 @@ public class InvertedIndex {
     public static void main(String[] args){
         InvertedIndex.arr = new int[]{50, 2, 9, 7, 6};
         InvertedIndex.createInvertedIndex();
-        int i = InvertedIndex.indexof(7);
+        int i = InvertedIndex.indexof(12);
     }
 
 }
